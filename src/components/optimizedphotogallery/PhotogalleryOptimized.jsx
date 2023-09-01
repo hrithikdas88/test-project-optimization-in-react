@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import usePhotoGallery from "../photogallery/usePhotoGallery";
-import { PhotogalleryContainer } from "../photogalleryContainer";
+import { PhotogalleryContainerOptimized } from "../photogallerycontainer/optimized/photogalleryContainerOptimized";
 
 const Photogalleryoptimized = () => {
   const { data, setData } = usePhotoGallery();
@@ -29,7 +29,7 @@ const Photogalleryoptimized = () => {
       <h1>photos</h1>
       <div className="image-container">
         {data?.map((photo) => (
-          <PhotogalleryContainer
+          <PhotogalleryContainerOptimized
             key={photo?.id}
             photo={photo}
             toggleLike={toggleLike}

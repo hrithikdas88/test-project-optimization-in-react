@@ -1,7 +1,7 @@
 import React from "react";
 import usePhotoGallery from "./usePhotoGallery";
 import "./Photogallery.scss";
-import { PhotogalleryContainer } from "../photogalleryContainer";
+import { PhotogalleryContainer } from "../photogallerycontainer/photogallerycontainer";
 
 const Photogallery = () => {
   const { data, setData } = usePhotoGallery();

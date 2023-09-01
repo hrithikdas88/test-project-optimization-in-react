@@ -1,6 +1,6 @@
 import React,{memo} from "react";
 
-export const PhotogalleryContainer = memo( ({ photo, toggleLike }) => {
+export const PhotogalleryContainerOptimized = memo( ({ photo, toggleLike }) => {
   return (
     <div className="image-button">
       <img src={photo?.src?.medium} alt="heyy" />
